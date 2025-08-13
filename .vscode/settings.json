@@ -6,6 +6,16 @@
             "driver": "SQLite",
             "name": "my_first_db",
             "database": "${workspaceFolder:Python}/dbs/sqlite/db.db"
+        },
+        {
+            "previewLimit": 50,
+            "server": "aws-1-ap-southeast-1.pooler.supabase.com",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "first_pg",
+            "database": "postgres",
+            "username": "postgres.sarrushmcmcecphoiaiq",
+            "password": "ztA5N.ai@HtPdwH"
         }
     ]
 }
