@@ -1,0 +1,6 @@
+CREATE TABLE student(
+    id SERIAL PRIMARY KEY
+);
+CREATE TABLE teacher(
+    id SERIAL PRIMARY KEY
+);
