@@ -1,15 +1,23 @@
--- DROP TABLE IF EXISTS student;
-CREATE TABLE IF NOT EXISTS student(
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(20) NOT NULL,
-    email VARCHAR(100) NOT NULL UNIQUE,
-    dob DATE,
-    phone INTEGER NOT NULL UNIQUE,
-    marks REAL CHECK(marks>-1 AND marks<101),
-    pocket_money INTEGER,
-    is_married BOOLEAN NOT NULL DEFAULT FALSE,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+--ALTER STATEMENT
+-- ALTER TABLE <table> <instruction<add, drop> <column>>
+-- Common Sense
+-- ALTER TABLE student
+-- ADD
+-- pocket_money INTEGER;
+-- DEFAULT VALUE or MAKE IT NULL
+-- UNIQUE
 
--- TEXT -> holw book
--- VARCHAR(50)
+-- ALTER IN STEPS
+-- CREATE MAKE IT NULL
+
+-- ALTER TABLE student
+-- ALTER COLUMN pocket_money SET NOT NULL;
+
+-- ADD THE DATA
+-- ALTER STAMENT TO CONSTRAIN THE COLUMN
+
+-- ALTER TABLE student drop
+-- COLUMN is_married;
+
+-- COMMON SENSE
+--
